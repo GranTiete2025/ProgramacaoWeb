@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GalloFlix</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <div class="loader"></div>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="./img/logo-horizontal.png"
+            alt="Logo"
+            width="250"
+            class="logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pesquisar.html">Pesquisar</a>
+            </li>
+            <li>
+              <a class="btn btn-danger ms-sm-3 text-white" href="login.html"
+                >Entrar</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- banner start -->
+    <div class="container-fluid p-0">
+      <div
+        id="carouselBanner"
+        class="carousel slide carousel-light carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div id="carousel-home" class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="8000">
+            <img
+              src="img/banner/moana2.jpg"
+              class="d-block w-100"
+              alt="Moana 2"
+            />
+            <div class="carousel-caption d-md-block">
+              <h3>Moana 2</h3>
+              <p class="d-none d-md-block">
+                Depois de receber um chamado inesperado de seus ancestrais
+                navegadores, Moana vai viajar para mares distantes da Oceania,
+                em águas perdidas em uma aventura perigosa.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="8000">
+            <img
+              src="img/banner/capitao-america-4.jpg"
+              class="d-block w-100"
+              alt="Capitão América: Admirável Mundo Novo"
+            />
+            <div class="carousel-caption d-md-block">
+              <h3>Capitão América: Admirável Mundo Novo</h3>
+              <p class="d-none d-md-block">
+                Após se encontrar com o recém-eleito presidente dos EUA,
+                Thaddeus Ross, Sam se vê no meio de um incidente internacional.
+                Ele deve descobrir o motivo por trás de uma conspiração global
+                nefasta antes que o verdadeiro gênio faça o mundo inteiro ser
+                dominado pelo vermelho.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="8000">
+            <img
+              src="img/banner/entre-montanhas.jpg"
+              class="d-block w-100"
+              alt="Entre Montanhas"
+            />
+            <div class="carousel-caption d-md-block">
+              <h3>Entre Montanhas</h3>
+              <p class="d-none d-md-block">
+                Dois agentes altamente treinados se aproximam à distância após
+                serem enviados para proteger lados opostos de um desfiladeiro
+                misterioso. Quando um mal emerge, eles precisam trabalhar juntos
+                para sobreviver ao que está lá dentro.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="8000">
+            <img
+              src="img/banner/acompanhante-perfeita.jpg"
+              class="d-block w-100"
+              alt="Acompanhante Perfeita"
+            />
+            <div class="carousel-caption d-md-block">
+              <h3>Acompanhante Perfeita</h3>
+              <p class="d-none d-md-block">
+                Uma viagem de fim de semana se torna sangrenta e violenta quando
+                uma androide subserviente, criada para a companhia humana,
+                simplesmente enlouquece.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselBanner"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselBanner"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </div>
+    <!-- banner end -->
+
+    <div class="container my-5 px-5">
+      <!-- Trending Movies Start -->
+      <div class="row">
+        <h4 class="text-white">Filmes em Destaque</h4>
+        <div id="trendingMovies" class="rowposter mt-3 p-2"></div>
+      </div>
+
+      <!-- TopRated Movies Start -->
+      <div class="row mt-5">
+        <h4 class="text-white">Filmes com as Melhores Avaliações</h4>
+        <div id="topRatedMovies" class="rowposter mt-3 p-2"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

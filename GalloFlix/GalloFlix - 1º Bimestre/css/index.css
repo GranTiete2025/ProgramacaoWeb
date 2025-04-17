@@ -1,0 +1,59 @@
+#carousel-home {
+    height: 100vh;
+}
+
+#carousel-home .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.carousel-inner .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    left: 0;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#carousel-home .carousel-caption h3 {
+    color: #E50914;
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+@media only screen and (max-width: 500px) {
+    #carousel-home .carousel-caption h3 {
+        font-size: 26px;
+    }
+}
+
+
+.rowposter {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.rowposter a {
+    cursor: inherit;
+}
+
+.rowimg:hover {
+    transform: scale(1.10);
+}
+
+.rowposter::-webkit-scrollbar {
+    display: none;
+}
+
+.rowposter a img {
+    margin-right: 10px;
+    border-radius: 20px;
+    box-sizing: content-box;
+    transition: transform 450ms;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+

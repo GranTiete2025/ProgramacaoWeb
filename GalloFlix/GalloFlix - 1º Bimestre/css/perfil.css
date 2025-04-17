@@ -1,0 +1,130 @@
+.cards .card {
+    background-color: black;    
+}
+
+.cards .card div img {
+    border: solid 5px black;
+}
+
+.cards .card a:hover {
+    cursor: pointer;
+}
+
+.cards .card a:hover > div img {
+    border: solid 5px white;
+}
+
+.cards .card:hover > p,
+.cards .card a:hover > p {
+    color: white !important;
+    cursor: pointer;
+}
+
+.cards .card a:hover > i {
+    background-color: white;
+}
+
+.cards .card a i.bxs-plus-circle {
+    font-size: 100px;
+    color: gray;
+    border: #000000 solid 5px;
+}
+
+.perfis button{
+    letter-spacing: 4px;
+    padding: 12px 35px;
+}
+
+.perfis .gerenciar,
+.edicao .editar,
+.excluir .exclui {
+    color: gray;
+    border: solid gray 2px;
+}
+
+.perfis .gerenciar:hover,
+.edicao .editar:hover,
+.excluir .exclui:hover {
+    color: white;
+    border: solid white 2px;
+}
+
+.perfis .gerenciando,
+.edicao .salvar,
+.excluir .manter {
+    color: black;
+    background-color: white;
+    border: solid white 2px;
+}
+
+.perfis .gerenciando:hover,
+.edicao .salvar:hover,
+.excluir .manter:hover {
+    color: white;
+    background-color: #E50914;
+    border: solid #E50914 2px;
+}
+
+#Crianca {
+    height: 1.5rem !important;
+    width: 3rem !important;
+}
+
+#Nome {
+    height: 50px
+}
+
+.reproducao {
+    width: 2rem;
+    height: 2rem;
+}
+
+.form-check-input:checked {
+    background-color: black;
+    border-color: gray;
+}
+
+.icon {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-size: 32px;
+    color: white;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.edicao select {
+    width: 200px;
+}
+
+.edicao .btn-classificacoes {
+    background-color: rgb(58, 58, 58);
+    color: white;
+    padding: 2px 10px;
+}
+
+.edicao .editar,
+.edicao .salvar {
+    padding: 5px 20px;
+    letter-spacing: 4px;
+}
+
+.btn-avatar {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 10px;
+    left: 10px;
+    padding: 2px;
+    font-size: 24px;
+    color: white;
+    border-radius: 50%;
+    background-color: #000000;
+    cursor: pointer;
+}

@@ -1,0 +1,79 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bokor&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Parkinsans', 'Ubuntu', sans-serif;
+    font-optical-sizing: auto;
+    background-color: #000000;
+}
+
+body {
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.navbar {
+    backdrop-filter: blur(2px);
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.pos-0 {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #E50914;
+    font-size: 18px;
+}
+
+a.nav-link.active {
+    font-weight: 800;
+}
+
+.scrolled {
+    background-color: #000000;
+}
+
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 100;
+    width: 200px;
+    height: 200px;
+    margin: -100px 0 0 -100px;
+    border: 50px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 50px solid #E50914;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
